@@ -1,0 +1,90 @@
+html {
+  background-color: #f6f6f6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: black;
+  margin: 14px auto !important;
+  max-width: 580px;
+}
+
+h1 {
+  margin-top: 0px;
+}
+
+table {
+  margin-bottom: 1em;
+}
+
+.header {
+  width: 100%;
+  height: 56px;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.content {
+  background: #ffffff;
+  border-radius: 3px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footer {
+  color: #999999;
+  text-align: center;
+}
+
+/**
+ * The Element:visited selector is only supported in 7 known email clients and should be avoided from implementing.
+ * (based on https://www.htmlemailcheck.com/check/)
+ */
+/* a:visited {
+  color: unset;
+} */
+
+.button {
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.button a {
+  color: white;
+  text-decoration: none;
+}
+.button.red {
+  background-color: red;
+}
+
+/* On mobile (if clients supports it) */
+@media only screen and (max-width: 620px) {
+  html {
+    font-size: 16px !important;
+  }
+  body {
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+  .header {
+    background-color: white !important;
+  }
+  .button {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
