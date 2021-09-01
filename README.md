@@ -15,17 +15,20 @@ npx markdown-mail
 ## API
 
 ```ts
-import { parseMail } from './mail'
+import { parseMail } from 'markdown-mail'
 import { join } from 'path'
 
 // define root directory for your mails
 const root = join(process.cwd(), 'mails')
 
 // prase your mails
-const mail = await parseMail(root, file)
+const mail = await parseMail(root, 'example.md')
+
+// print the mail to the console
+console.log(mail)
 
 // types:
-const parseMail: (root: string, file: string, cache?: boolean) => Promise<string | undefined>
+// parseMail(root: string, file: string, cache?: boolean): Promise<string>
 
 // "cache" is not implemented yet.
 ```
