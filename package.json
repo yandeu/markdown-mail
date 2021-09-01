@@ -1,7 +1,7 @@
 {
-  "name": "markdown-email",
+  "name": "markdown-mail",
   "version": "0.0.0",
-  "description": "📬 Turn your Markdown files into Responsive HTML Emails.",
+  "description": "📬 Turn your Markdown files into Responsive HTML E-Mails.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "bin": "lib/bin.js",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lichtquelle/markdown-email.git"
+    "url": "git+https://github.com/lichtquelle/markdown-mail.git"
   },
   "author": "Yannick Deubel https://github.com/yandeu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lichtquelle/markdown-email/issues"
+    "url": "https://github.com/lichtquelle/markdown-mail/issues"
   },
-  "homepage": "https://github.com/lichtquelle/markdown-email#readme",
+  "homepage": "https://github.com/lichtquelle/markdown-mail#readme",
   "dependencies": {
     "@yandeu/parse-markdown": "^0.0.1",
     "express": "^4.17.1",
