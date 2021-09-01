@@ -71,7 +71,7 @@ const parseMail = async (root: string, file: string, cache: boolean = false) => 
 
     return mail.replace(`"text/css">`, `"text/css">${snippet}`)
   } catch (error) {
-    console.log(error.message)
+    if (error instanceof Error) console.log(error.message)
     return
   }
 }

@@ -7,7 +7,7 @@ export const mkdir = function (dir) {
   // making directory without exception if exists
   try {
     fs.mkdirSync(dir)
-  } catch (e) {
+  } catch (e: any) {
     if (e.code != 'EEXIST') {
       throw e
     }
