@@ -45,24 +45,23 @@ const parseMail = async (root: string, file: string, cache: boolean = false) => 
       markdown = markdown.replace(array1[0], `${table.open(array1[2])}${array1[3]}${table.close()}`)
     }
 
-    const html = `
-        <!doctype html>
-        <html>
-          <head>
-            <meta name="viewport" content="width=device-width">
-            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-            <title>Simple Transactional Email</title>
-            <style type="text/css">${css}</style>
-          </head>    
-          <body>
-            ${header}
-            ${table.open('content')}
-              ${markdown}
-              ${table.close()}
-            ${footer}
-          </body>
-        </html>
-        `
+    const html = `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Transactional Email</title>
+  </head>
+  <body>
+    <style type="text/css">${css}</style>
+    ${header}
+    ${table.open('content')}
+    ${markdown}
+    ${table.close()}
+    ${footer}
+  </body>
+</html>`
 
     const mail = juice(html)
 
