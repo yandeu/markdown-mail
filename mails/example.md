@@ -8,7 +8,7 @@ LOGO
 
 Hi {name},
 
-This is your first email.
+This is your first email. This is a [link to google](https://google.com/).
 
 <div class="button"><a href="click me">click link</a></div>
 
