@@ -1,6 +1,6 @@
 {
   "name": "markdown-mail",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "📬 Turn your Markdown files into Responsive HTML E-Mails.",
   "main": "lib/index.mjs",
   "types": "lib/index.d.mts",
