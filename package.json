@@ -13,6 +13,12 @@
     "build": "rimraf lib && tsc",
     "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "markdown",
+    "md",
+    "email",
+    "mail"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lichtquelle/markdown-mail.git"
