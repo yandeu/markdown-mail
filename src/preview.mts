@@ -1,7 +1,7 @@
-import fs from 'fs/promises'
-import { join } from 'path'
+import fs from 'node:fs/promises'
+import { join } from 'node:path'
 import express, { Request } from 'express'
-import { parseMail } from './mail'
+import { parseMail } from './mail.mjs'
 
 export interface PreviewOptions {
   root: string

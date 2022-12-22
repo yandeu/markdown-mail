@@ -1,7 +1,7 @@
 // copied and modified from https://gist.github.com/tkihira/3014700
 
-import fs from 'fs'
-import path from 'path'
+import fs from 'node:fs'
+import path from 'node:path'
 
 export const mkdir = function (dir) {
   // making directory without exception if exists

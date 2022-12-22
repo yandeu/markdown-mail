@@ -2,14 +2,14 @@
   "name": "markdown-mail",
   "version": "0.0.1",
   "description": "📬 Turn your Markdown files into Responsive HTML E-Mails.",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "bin": "lib/bin.js",
+  "main": "lib/index.mjs",
+  "types": "lib/index.d.mts",
+  "bin": "lib/bin.mjs",
   "scripts": {
     "start": "npm run dev",
     "dev": "npm run build && npm-run-all --parallel dev:*",
     "dev:tsc": "tsc --watch",
-    "dev:nodemon": "nodemon lib/bin.js --open false",
+    "dev:nodemon": "nodemon --watch lib --exec \"node lib/bin.mjs --open true\"",
     "build": "rimraf lib && tsc",
     "prepublishOnly": "npm run build"
   },
