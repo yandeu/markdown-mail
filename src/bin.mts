@@ -4,18 +4,32 @@ import { Arguments } from 'node-cli'
 import { preview } from './preview.mjs'
 import { init as initFnc } from './init.mjs'
 import FiveServer from 'five-server'
+import { parseMail } from './mail.mjs'
+import { mkdir, readdir, writeFile } from 'node:fs/promises'
+import { existsSync } from 'node:fs'
 
 const Args = new Arguments()
 
 const root = Args.getOption('root')?.[0]
 const port = Args.getOption('port')?.[0] ?? 3500
-const open = Args.getOption('open')?.[0] === 'false' ? false : true
+const open = Args.getOption('open')?.[0] === 'true' ? true : false
 const init = Args.hasOption('init')
-
-console.log(open)
+const build = Args.hasOption('build')
 
 if (init) {
   initFnc(root)
+  process.exit()
+}
+
+if (build) {
+  const dir = await readdir(root || 'mails')
+  const mails = dir.filter(d => d.endsWith('.md'))
+  if (!existsSync('dist')) await mkdir('dist', {})
+
+  for (const mail of mails) {
+    const html = await parseMail(root || 'mails', mail)
+    if (html) await writeFile('dist/' + mail?.replace('.md', '.html'), html)
+  }
   process.exit()
 }
 

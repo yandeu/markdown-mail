@@ -5,11 +5,14 @@ Design and serve beautiful email using markdown.
 ## Development
 
 ```bash
-# Create a `/mails` directory with a starter template.
+# Create a `mails/` directory with a starter template.
 npx markdown-mail --init
 
 # Start the dev server to design your mails.
-npx markdown-mail
+npx markdown-mail --open true
+
+# Build the mails to the `dist/` folder.
+npx markdown-mail --build
 ```
 
 ## API

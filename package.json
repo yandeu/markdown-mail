@@ -9,7 +9,7 @@
     "start": "npm run dev",
     "dev": "npm run build && npm-run-all --parallel dev:*",
     "dev:tsc": "tsc --watch",
-    "dev:nodemon": "nodemon --watch lib --exec \"node lib/bin.mjs --open true\"",
+    "dev:nodemon": "nodemon --watch lib --exec \"node lib/bin.mjs\"",
     "build": "rimraf lib && tsc",
     "prepublishOnly": "npm run build"
   },
