@@ -25,6 +25,6 @@ This is your first email. This is a [link to google](https://google.com/).
 Company Name and Address  
 Don't like these emails? [Unsubscribe]().
 
-Powered by [licht.dev](https://licht.dev/)
+Powered by [@yandeu](https://github.com/yandeu)
 
 </footer>

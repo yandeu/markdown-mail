@@ -17,6 +17,12 @@ h1 {
   margin-top: 0px;
 }
 
+a,
+a:visited {
+  color: #3498db;
+  text-decoration: none;
+}
+
 table {
   margin-bottom: 1em;
 }
@@ -41,6 +47,10 @@ table {
 .footer {
   color: #999999;
   text-align: center;
+}
+.footer a,
+.footer a:visited {
+  color: #646464;
 }
 
 /**
