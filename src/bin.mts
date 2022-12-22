@@ -17,7 +17,7 @@ const init = Args.hasOption('init')
 const build = Args.hasOption('build')
 
 if (init) {
-  initFnc(root)
+  await initFnc(root)
   process.exit()
 }
 

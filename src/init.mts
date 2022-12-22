@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-export const init = (root: string = process.cwd()) => {
+export const init = async (root: string = process.cwd()) => {
   const dest = join(root, 'mails')
   const src = join(__dirname, '../mails')
 
@@ -14,5 +14,5 @@ export const init = (root: string = process.cwd()) => {
     return
   }
 
-  copyDir(src, dest)
+  await copyDir(src, dest)
 }
