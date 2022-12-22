@@ -16,6 +16,10 @@ const open = Args.getOption('open')?.[0] === 'true' ? true : false
 const init = Args.hasOption('init')
 const build = Args.hasOption('build')
 
+if (root) {
+  if (!existsSync(root)) await mkdir(root)
+}
+
 if (init) {
   await initFnc(root)
   process.exit()
