@@ -21,14 +21,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lichtquelle/markdown-mail.git"
+    "url": "git+https://github.com/yandeu/markdown-mail.git"
   },
   "author": "Yannick Deubel https://github.com/yandeu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lichtquelle/markdown-mail/issues"
+    "url": "https://github.com/yandeu/markdown-mail/issues"
   },
-  "homepage": "https://github.com/lichtquelle/markdown-mail#readme",
+  "homepage": "https://github.com/yandeu/markdown-mail#readme",
   "dependencies": {
     "@yandeu/parse-markdown": "^0.0.2",
     "express": "^4.18.2",
